@@ -23,6 +23,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    
+    lintOptions {
+          abortOnError false
+      }
 }
 
 dependencies {
@@ -110,4 +114,4 @@ dependencies {
     api rootProject.ext.dependencies["timber"]
 }
 
-apply from: '../bintray.gradle'
+// apply from: '../bintray.gradle'
